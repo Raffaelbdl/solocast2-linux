@@ -1,0 +1,3 @@
+# HyperX SoloCast 2: let the logged-in desktop user talk to the mic's HID interface
+# (needed to toggle the onboard low/high-pass filters and presence boost).
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="03f0", ATTRS{idProduct}=="0fbf", TAG+="uaccess"
